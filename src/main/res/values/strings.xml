@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizActivity</string>
+    <string name="app_name">Course Work</string>
     <string name="login">логин</string>
     <string name="pass">пароль</string>
     <string name="repeat_pass">повтор пароля</string>
