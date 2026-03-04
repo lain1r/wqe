@@ -9,48 +9,23 @@
     tools:context=".MainActivity">
 
 
-    <!--основной контейнер-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/diagr"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="46dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <!--контейнер navbar-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="16pt"
-            android:background="@color/lignt_gray">
-
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/user"
-                android:background="@null">
-            </ImageButton>
-        </LinearLayout>
-
-        <!--контейнер диаграмма-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/diagr">
-            </ImageView>
-
-        </LinearLayout>
-
-
-
+        </Button>
 
 
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
