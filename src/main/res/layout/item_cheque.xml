@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400px"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvChequeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер: 123"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvChequeAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сумма: 100.50 руб." />
+
+    <TextView
+        android:id="@+id/tvChequeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата: 01.01.2025" />
+</LinearLayout>
