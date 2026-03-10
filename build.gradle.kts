@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "ru.quizactivity"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ru.quizactivity"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -40,4 +40,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.github.javafaker:javafaker:1.0.2")
+    implementation("com.github.bumptech.glide:glide:4.14.2")
 }

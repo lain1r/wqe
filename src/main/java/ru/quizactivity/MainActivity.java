@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,16 +15,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.lang.annotation.ElementType;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText login;
-    private EditText password;
-    private EditText repeatPassword;
-    private TextView questionTextView;
-    private AlertDialog sos;
+    private Button buttonUser;
+    private Button buttonSetings;
+    private Button buttonAdd;
+    private RecyclerView recyclerView;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +33,11 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        login = findViewById(R.id.login);
-        login = findViewById(R.id.password);
-        login = findViewById(R.id.repear_password);
-        sos.setView(login);
-        // create alert dialog
-        AlertDialog alertDialog = sos;
-        // show it
-        alertDialog.show();
+        buttonAdd = findViewById(R.id.addBtn);
+        buttonSetings = findViewById(R.id.setingsBtn);
+        buttonUser = findViewById(R.id.userBtn);
+        recyclerView = findViewById(R.id.recyclerview);
+        imageView = findViewById(R.id.imageView);
 
     }
 

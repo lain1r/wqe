@@ -4,6 +4,7 @@
     <string name="pass">пароль</string>
     <string name="repeat_pass">повтор пароля</string>
     <string name="submit">подтвердить</string>
+    <string name="add_button">добавить</string>
     <string name="textmess">наименование траты</string>
     <string name="count">сумма траты</string>
     <string name="steing">название настройки</string>
