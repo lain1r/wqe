@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.lang.annotation.ElementType;
@@ -33,11 +34,19 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        imageView = findViewById(R.id.imageView);
+
         buttonAdd = findViewById(R.id.addBtn);
         buttonSetings = findViewById(R.id.setingsBtn);
         buttonUser = findViewById(R.id.userBtn);
+
         recyclerView = findViewById(R.id.recyclerview);
-        imageView = findViewById(R.id.imageView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
+        buttonAdd.setOnClickListener(new View.OnClickListener(){
+
+        });
 
     }
 

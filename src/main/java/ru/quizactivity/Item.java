@@ -2,13 +2,13 @@ package ru.quizactivity;
 
 import android.widget.ImageView;
 
-public class item {
+public class Item {
     private int amount;
     private String name;
     private ImageView icon;
     private String date;
 
-    public item(int amount, String name, ImageView icon, String date) {
+    public Item(int amount, String name, ImageView icon, String date) {
         this.amount = amount;
         this.name = name;
         this.icon = icon;
